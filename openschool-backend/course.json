@@ -1,0 +1,13 @@
+{
+    "_id": "ObjectId",
+    "title": "String",
+    "description": "String",
+    "instructor": "ObjectId", 
+    "students": ["ObjectId"], 
+    "schedule": {
+      "startDate": "Date",
+      "endDate": "Date",
+      "time": "String"
+    }
+  }
+  

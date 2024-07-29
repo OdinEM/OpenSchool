@@ -1,0 +1,13 @@
+{
+    "_id": "ObjectId",
+    "studentId": "ObjectId", 
+    "courseId": "ObjectId",  
+    "grades": {
+      "assignments": "Number",
+      "exams": "Number",
+      "projects": "Number"
+    },
+    "comments": "String",
+    "improvementAreas": ["String"]
+  }
+  

@@ -1,0 +1,16 @@
+{
+    "_id": "ObjectId",
+    "username": "String",
+    "password": "String",
+    "email": "String",
+    "role": "String", 
+    "profile": {
+      "firstName": "String",
+      "lastName": "String",
+      "dateOfBirth": "Date",
+      "avatar": "String",
+      "funFacts": ["String"],
+      "specializations": ["String"]
+    }
+  }
+  
