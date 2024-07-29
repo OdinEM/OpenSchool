@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSchool Sign Up</title>
+    <link rel="stylesheet" href="signup.css"> 
+</head>
+<body>
+    <div id="signup-page" class="background">
+        <div class="signup-container">
+            <div class="signup-box">
+                <div class="welcome-message">
+                    <h1>Create Your Account</h1>
+                </div>
+                <form id="signup-form" action="#" method="post">
+                    <div class="textbox">
+                        <input type="text" placeholder="Full Name" name="fullname" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="email" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" id="signup-button" class="btn">Sign Up</button>
+                    <p class="signin-link">Already have an account? <a href="login.html">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialog Box -->
+    <div id="dialog" class="dialog-overlay">
+        <div class="dialog-box">
+            <div id="dialog-message">
+                <!-- Message content will be inserted by JavaScript -->
+            </div>
+            <button id="close-dialog" class="btn">Close</button>
+        </div>
+    </div>
+
+    <script src="signup.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Oden Emmanuel</title>
+    <link rel="stylesheet" href="profile.css"> 
+    <style>
+        /* Basic styles for the profile page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+        }
+        aside.sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #34495e;
+        }
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background-color: #34495e;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            flex: 1;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile-card h1 {
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+        .profile-card h2 {
+            color: #16a085;
+            margin: 10px 0;
+        }
+        .profile-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .fun-facts {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .fun-facts h3 {
+            color: #2c3e50;
+        }
+        .fun-facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .fun-facts ul li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggle-btn">&#9776;</button>
+            <h2>Dashboard Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <div class="main-content" id="main-content">
+            <header>
+                <h1>Profile - Oden Emmanuel</h1>
+            </header>
+
+            <section class="profile-card">
+                <img src="https://via.placeholder.com/150" alt="Oden Emmanuel">
+                <h1>Oden Emmanuel</h1>
+                <h2>Top Performer in Robotics</h2>
+                <p>
+                    Oden Emmanuel is an exceptional student with a passion for technology and learning. He has excelled in various subjects, particularly in Robotics, where he has demonstrated remarkable skills and creativity.
+                </p>
+                <div class="fun-facts">
+                    <h3>Fun Facts about Oden:</h3>
+                    <ul>
+                        <li>Has built several robots from scratch.</li>
+                        <li>Loves playing video games in his free time.</li>
+                        <li>Enjoys listening to classical music while studying.</li>
+                        <li>Fluent in three languages: English, French, and Spanish.</li>
+                        <li>Volunteers at local tech fairs and workshops.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 OpenSchool</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
