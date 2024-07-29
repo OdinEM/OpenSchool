@@ -3,81 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenSchool Dashboard</title>
-    <link rel="stylesheet" href="index.css">
-   
+    <title>OpenSchool Login</title>
+    <link rel="stylesheet" href="index.css"> 
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>OpenSchool</h1>
+    <div class="background">
+        <div class="login-container">
+            <div class="login-box">
+                <div class="welcome-message">
+                    <h1>Welcome to OpenSchool</h1>
+                </div>
+                <form action="index.html" method="get"> 
+                    <div class="textbox">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+                </form>
+                <div class="signup-container">
+                    <p>Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p> 
+                </div>
+            </div>
+            </div>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="profile.html">Home</a></li>
-                <li><a href="student.html">Student Performance</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="settings.html">Settings</a></li>
-                
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="container">
-        <section class="welcome">
-            <h2>Welcome, Oden</h2>
-            <p>Explore your courses and track your progress.</p>
-        </section>
-        
-        <section class="course-grid">
-            <article class="course-block">
-                <h3>History</h3>
-                <p>Explore the events of the past.</p>
-            </article>
-            <article class="course-block">
-                <h3>Maths</h3>
-                <p>Dive into numbers and equations.</p>
-            </article>
-            <article class="course-block">
-                <h3>Design</h3>
-                <p>Unleash your creativity and design skills.</p>
-            </article>
-            <article class="course-block">
-                <h3>Robotics</h3>
-                <p>Build and program robots.</p>
-            </article>
-            <article class="course-block">
-                <h3>Science</h3>
-                <p>Discover the wonders of the natural world.</p>
-            </article>
-            <article class="course-block">
-                <h3>Literature</h3>
-                <p>Dive into the world of classic and modern texts.</p>
-            </article>
-            <article class="course-block">
-                <h3>Art</h3>
-                <p>Explore various artistic techniques and mediums.</p>
-            </article>
-            <article class="course-block">
-                <h3>Physical Education</h3>
-                <p>Stay active and learn about fitness and health.</p>
-            </article>
-            <article class="course-block">
-                <h3>Computer Science</h3>
-                <p>Learn programming, algorithms, and data structures.</p>
-            </article>
-            <article class="course-block">
-                <h3>Music</h3>
-                <p>Explore music theory and practice instruments.</p>
-            </article>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 OpenSchool. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>

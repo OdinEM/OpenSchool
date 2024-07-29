@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,104 +6,141 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-}
-
-header {
-    background-color: #004d00; 
-    color: #fff;
-    padding: 15px 20px;
+    background-color: rgb(240, 255, 246);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 4px solid #003300; 
+    height: 100vh;
+    overflow: hidden;
 }
 
-.logo h1 {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul li {
-    margin-left: 20px;
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.login-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-.welcome {
+.welcome-message {
     margin-bottom: 20px;
 }
 
-.welcome h2 {
+.welcome-message h1 {
+    color: #004d00;
     font-size: 24px;
-    color: #004d00;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards;
 }
 
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min-width */
-    gap: 20px;
+.textbox {
+    margin-bottom: 20px;
 }
 
-.course-block {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px; /* Increased border radius */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-    padding: 30px; /* Increased padding */
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for hover effects */
-}
-
-.course-block h3 {
-    font-size: 20px; /* Increased font size */
-    color: #004d00;
-    margin-bottom: 15px; /* Increased margin */
-}
-
-.course-block p {
-    color: #666;
-}
-
-.course-block:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-footer {
-    background-color: #004d00;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
+.textbox input {
     width: 100%;
-    border-top: 4px solid #003300;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
 }
 
-footer a {
+.textbox input:focus {
+    border-color: #004d00;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #004d00;
+    border: none;
+    border-radius: 5px;
     color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #003300;
+}
+
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #004d00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.signup-container {
+    margin-top: 20px;
+}
+
+.signup-container p {
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-container a {
+    color: #004d00;
     text-decoration: none;
     font-weight: bold;
 }
 
-footer a:hover {
+.signup-container a:hover {
     text-decoration: underline;
 }
+
